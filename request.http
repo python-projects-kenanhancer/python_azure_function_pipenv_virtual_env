@@ -1,0 +1,8 @@
+### call http function (HttpExample)
+curl http://localhost:7071/api/HttpExample?name=Azure
+
+### call http function (HttpExample)
+curl -X POST -H "Content-Type: application/json" -d '{ "name": "Azure" }' http://localhost:7071/api/HttpExample
+
+### call non http function (QueueFunc)
+curl --request POST -H "Content-Type: application/json" --data '{"input":"sample queue data"}' http://localhost:7071/admin/functions/QueueFunc
